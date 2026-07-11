@@ -1,19 +1,47 @@
-# Noemion
-
-> Building a deterministic object foundation for generative computing.
-
-Noemion is an independent name derived from **Noema**, the philosophical term for the content, object, or meaning toward which thought is directed. Its counterpart, **Noesis**, describes the act of understanding, judging, or thinking. This relationship offers a useful model for the project: compilation resembles the act of forming an understanding, while GSIR and GOBJ represent the resulting machine-oriented objects of intent and meaning.
-
-Noemion explores how human requirements can be compiled into structured objects that machines can analyze, validate, relocate, link, securely load, and execute through constrained generative runtimes. It is not an attempt to package prompts, prose, or skills into a binary container. The goal is a genuine object model for generative semantics—one that can preserve constraints, ambiguity, evidence, permissions, and acceptance conditions independently of a particular model or prompt format.
-
-The architecture is inspired by the durable engineering ideas behind traditional compiler and binary toolchains: intermediate representations, sections and segments, symbols, relocations, linking, loading, debugging, stripping, and integrity verification. Noemion adapts these ideas without treating generative work as conventional machine instructions. Its Strict pipeline is intended to remain deterministic, model-free, and reproducible; model output is treated as untrusted input rather than authoritative object code.
-
-Noemion’s historical mission is to help generative computing acquire the durable foundations that object formats and toolchains brought to software engineering. Human intent should not remain trapped in disposable conversational context. It should be possible to inspect, compose, govern, preserve, and execute it as a verifiable computational artifact.
-
-The project is currently in the specification and secure binary-core design stage. No stable ABI, production toolchain, or final specification has been released yet.
-
-Explore the project at **[noemion.github.io](https://noemion.github.io/)**.
+<div align="center">
+  <h1>Noemion</h1>
+  <p><strong>Intent, made inspectable.</strong></p>
+  <p>A deterministic object foundation for generative computing.</p>
+  <p>
+    <img alt="Stage: Specification and Core Design" src="https://img.shields.io/badge/stage-specification_%26_core_design-0969da?style=flat-square">
+    <img alt="Core: Deterministic" src="https://img.shields.io/badge/core-deterministic-1f883d?style=flat-square">
+    <img alt="Models: Untrusted Inputs" src="https://img.shields.io/badge/models-untrusted_inputs-656d76?style=flat-square">
+  </p>
+  <p>
+    <a href="https://noemion.github.io/">Project Portal</a>
+    ·
+    <a href="https://noemion.github.io/architecture/">Architecture</a>
+    ·
+    <a href="https://noemion.github.io/specifications/">Specifications</a>
+  </p>
+</div>
 
 ---
 
-© 2026 Noemion. All rights reserved. Noemion and its associated marks are not licensed for reuse.
+## From thought to object
+
+**Noemion** is derived from *Noema*—the content or object toward which thought is directed. Its counterpart, *Noesis*, is the act of understanding or judgment.
+
+| Noesis | Noema |
+| :--- | :--- |
+| Understanding and compilation | GSIR / GOBJ machine representations |
+
+<p align="center"><code>human intent → deterministic compilation → GSIR / GOBJ → link · load · execute</code></p>
+
+## The project
+
+Noemion explores how requirements can become structured objects that machines can analyze, validate, relocate, link, securely load, and execute through constrained generative runtimes. It is not a binary container for prompts or prose.
+
+| Deterministic core | First-class ambiguity | Untrusted by design |
+| :--- | :--- | :--- |
+| Strict, model-free, reproducible | Uncertainty is preserved, not invented away | Models propose; deterministic tools decide |
+
+<details>
+  <summary><strong>Engineering lineage</strong></summary>
+  <br>
+  Noemion draws from the durable ideas behind compiler and binary toolchains—intermediate representations, sections, symbols, relocations, linking, loading, debugging, stripping, and integrity verification—without treating generative work as conventional machine instructions.
+</details>
+
+> **Current stage:** specification and secure binary-core design. No stable ABI, production toolchain, or final specification has been released.
+
+<p align="center"><sub>© 2026 Noemion. All rights reserved. Noemion and its associated marks are not licensed for reuse.</sub></p>
