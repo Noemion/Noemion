@@ -5,3 +5,4 @@
 - Do not present planned capabilities as released features or compatibility commitments.
 - Do not add an open-source license unless the repository begins distributing reusable source code or the user explicitly requests one.
 - Preserve Noemion's name, identity, and brand assets as reserved material.
+- After repository changes are complete and proportionate validation passes, create a clear commit and push it directly to the current tracked branch. Stop before pushing only when the user explicitly requests local-only work or authentication, permission, or remote state blocks publication; report any blocker immediately.
