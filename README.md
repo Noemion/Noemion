@@ -13,6 +13,8 @@
     <a href="https://noemion.github.io/architecture/">Architecture</a>
     ·
     <a href="https://noemion.github.io/specifications/">Specifications</a>
+    ·
+    <a href="https://github.com/Noemion/noemion.github.io">Website Source</a>
   </p>
 </div>
 
@@ -41,6 +43,19 @@ Noemion explores how requirements can become structured objects that machines ca
   <br>
   Noemion draws from the durable ideas behind compiler and binary toolchains—intermediate representations, sections, symbols, relocations, linking, loading, debugging, stripping, and integrity verification—without treating generative work as conventional machine instructions.
 </details>
+
+## Project portal and public documentation
+
+The canonical public entry point is **[noemion.github.io](https://noemion.github.io/)**. It explains the project for developers, users, and potential adopters while keeping proposed designs separate from verified implementation status.
+
+| Destination | What it contains |
+| :--- | :--- |
+| [Project portal](https://noemion.github.io/) | Noemion's purpose, boundaries, current stage, and recommended starting points |
+| [Architecture](https://noemion.github.io/architecture/) | Object lifecycle, responsibility layers, trust boundaries, and open questions |
+| [Specifications](https://noemion.github.io/specifications/) | GSIR, GOBJ, SSO, maturity labels, invariants, and normative boundaries |
+| [Tools](https://noemion.github.io/tools/) | Project pages for the deterministic compiler, object, linker, validation, and runtime toolchain |
+| [Documentation](https://noemion.github.io/docs/) | Jekyll-generated guides and tool manuals maintained from Markdown sources |
+| [Website repository](https://github.com/Noemion/noemion.github.io) | The Jekyll layouts, Markdown sources, design system, navigation, tests, and Pages deployment workflow |
 
 > **Current stage:** specification and secure binary-core design. No stable ABI, production toolchain, or final specification has been released.
 
