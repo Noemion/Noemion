@@ -24,11 +24,13 @@
 
 **Noemion** is the project and ecosystem name. Its core engineering term is **Endem** (`end` + `-eme`): the smallest independently valid and verifiable unit of a desired end state.
 
-An Endem is not a prompt wrapped in a binary container. It carries one root aim together with five explicit semantic groups:
+An Endem is not a prompt wrapped in a binary container. It carries one root case graph together with five explicit projection groups:
 
-| `say` | `aim` | `must` | `done` | `open` |
+| `say` | `mean` | `case` | `when` | `open` |
 | :--- | :--- | :--- | :--- | :--- |
-| Bound source expression | One desired end state | Hard limits and prohibitions | Acceptance and required evidence | Preserved ambiguity and conflicts |
+| Source signs and provenance | Authorized meaning projection | One possible target situation | Fulfillment observations and authority | Preserved projection gaps |
+
+The relation graph itself carries the logical form: the artifact does not self-certify through a `logical_form`, `valid`, or `true` label. Invalid sign combinations, unresolved projections, and insufficient observations remain distinct as `no-sense`, `open`, and `unknown`.
 
 <p align="center"><code>source → form → Endem → [optional bind → Weave] → run → Frame → Witness</code></p>
 
@@ -61,6 +63,6 @@ The design borrows durable ideas from compiler and binary toolchains—determini
 
 The canonical public entry point is **[noemion.github.io](https://noemion.github.io/)**. It keeps accepted decisions, proposed mechanisms, and verified implementation evidence visibly separate.
 
-> **Current stage:** accepted vocabulary and application topology; specification and secure core design are in progress. No stable wire format, ABI, production command, or release package exists yet.
+> **Current stage:** accepted vocabulary, propositional projection semantics, and application topology; specification and secure core design are in progress. No stable wire format, ABI, production command, or release package exists yet.
 
 <p align="center"><sub>© 2026 Noemion. All rights reserved. Noemion and its associated marks are not licensed for reuse.</sub></p>
