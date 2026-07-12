@@ -49,7 +49,7 @@ The situation remains neutral: prohibition is explicit negation inside `skena`, 
 | **Theor** | A separately implemented, read-only interpretation domain |
 | **Praxor** | An isolated enactment and least-authority domain |
 
-The planned public command is `endem`, with eight native actions:
+The command surface is `endem`, with eight native actions:
 
 <p align="center"><code>poie · elenk · pleko · tasse · sphra · theor · praxe · peira</code></p>
 
@@ -63,6 +63,6 @@ The design borrows durable ideas from binary toolchains—deterministic writing,
 
 The canonical public entry point is **[noemion.github.io](https://noemion.github.io/)**.
 
-> **Current stage:** the native vocabulary, six-facet semantic model, situation/direction/observation separation, and trust boundaries are accepted design decisions. No stable wire format, ABI, executable command, or release package exists yet.
+> **Current stage:** the native vocabulary, six-facet semantic model, and trust boundaries are accepted design decisions. An unpublished Rust candidate implements `poie`, `elenk`, `theor`, and `peira` against the experimental END-P1 profile; no public implementation repository, stable ABI, or release package exists yet.
 
 <p align="center"><sub>© 2026 Noemion. All rights reserved. Noemion and its associated marks are not licensed for reuse.</sub></p>
