@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Noemion</h1>
-  <p><strong>Intent, made inspectable.</strong></p>
-  <p>A deterministic object foundation for generative computing.</p>
+  <p><strong>Ends, made inspectable.</strong></p>
+  <p>A deterministic foundation for durable natural-language goals.</p>
   <p>
     <img alt="Stage: Specification and Core Design" src="https://img.shields.io/badge/stage-specification_%26_core_design-0969da?style=flat-square">
     <img alt="Core: Deterministic" src="https://img.shields.io/badge/core-deterministic-1f883d?style=flat-square">
@@ -10,7 +10,7 @@
   <p>
     <a href="https://noemion.github.io/">Project Portal</a>
     ·
-    <a href="https://noemion.github.io/architecture/">Architecture</a>
+    <a href="https://noemion.github.io/endem/">Endem</a>
     ·
     <a href="https://noemion.github.io/specifications/">Specifications</a>
     ·
@@ -20,43 +20,47 @@
 
 ---
 
-## From thought to object
+## A new primitive: Endem
 
-**Noemion** is derived from *Noema*—the content or object toward which thought is directed. Its counterpart, *Noesis*, is the act of understanding or judgment.
+**Noemion** is the project and ecosystem name. Its core engineering term is **Endem** (`end` + `-eme`): the smallest independently valid and verifiable unit of a desired end state.
 
-| Noesis | Noema |
+An Endem is not a prompt wrapped in a binary container. It carries one root aim together with five explicit semantic groups:
+
+| `say` | `aim` | `must` | `done` | `open` |
+| :--- | :--- | :--- | :--- | :--- |
+| Bound source expression | One desired end state | Hard limits and prohibitions | Acceptance and required evidence | Preserved ambiguity and conflicts |
+
+<p align="center"><code>source → form → Endem → [optional bind → Weave] → run → Frame → Witness</code></p>
+
+## One compact application surface
+
+The project plans one public command, `endem`, instead of a family of prefixed tools:
+
+| Command | Responsibility |
 | :--- | :--- |
-| Understanding and compilation | NIR / NOBJ machine representations |
+| `endem form` | Deterministically form an Endem from controlled source bindings |
+| `endem check` | Validate the actual artifact and return scoped verification evidence |
+| `endem bind` | Resolve references and build a closed Weave |
+| `endem pack` / `seal` | Prepare a release and bind an external signature response |
+| `endem see` | Inspect with a separately implemented, read-only parser |
+| `endem run` | Start an isolated runner with explicit capabilities and acceptance policy |
+| `endem test` | Run conformance, reproducibility, malformed-input, and cross-reader tests |
 
-<p align="center"><code>human intent → deterministic compilation → NIR / NOBJ → link · load · execute</code></p>
+A single user-facing command does not collapse trust domains. `see` must remain independent of the production reader, and `run` must execute in a separate least-privilege process. Models may propose candidates; they never write canonical Endem bytes, widen authority, or declare acceptance.
 
-## The project
+## Artifact vocabulary
 
-Noemion explores how requirements can become structured objects that machines can analyze, validate, relocate, link, securely load, and execute through constrained generative runtimes. It is not a binary container for prompts or prose.
+- **Endem** — one minimal goal unit.
+- **Weave** — a resolved closure of two or more Endems and their pinned dependencies; one self-contained Endem needs no Weave.
+- **Frame** — the immutable loaded state for one run; it is not a file format.
+- **Witness** — scoped evidence and decisions from a run; it is evidence, not a claim of mathematical proof.
 
-| Deterministic core | First-class ambiguity | Untrusted by design |
-| :--- | :--- | :--- |
-| Strict, model-free, reproducible | Uncertainty is preserved, not invented away | Models propose; deterministic tools decide |
+The design borrows durable ideas from compiler and binary toolchains—deterministic writing, linking, relocation-like reference binding, independent inspection, loading, stripping, and integrity checks—without copying their machine-instruction ontology or their application count.
 
-<details>
-  <summary><strong>Engineering lineage</strong></summary>
-  <br>
-  Noemion draws from the durable ideas behind compiler and binary toolchains—intermediate representations, sections, symbols, relocations, linking, loading, debugging, stripping, and integrity verification—without treating generative work as conventional machine instructions.
-</details>
+## Project portal and status
 
-## Project portal and public documentation
+The canonical public entry point is **[noemion.github.io](https://noemion.github.io/)**. It keeps accepted decisions, proposed mechanisms, and verified implementation evidence visibly separate.
 
-The canonical public entry point is **[noemion.github.io](https://noemion.github.io/)**. It explains the project for developers, users, and potential adopters while keeping proposed designs separate from verified implementation status.
-
-| Destination | What it contains |
-| :--- | :--- |
-| [Project portal](https://noemion.github.io/) | Noemion's purpose, boundaries, current stage, and recommended starting points |
-| [Architecture](https://noemion.github.io/architecture/) | Object lifecycle, responsibility layers, trust boundaries, and open questions |
-| [Specifications](https://noemion.github.io/specifications/) | NIR, NOBJ, HOBJ, maturity labels, invariants, and normative boundaries |
-| [Tools](https://noemion.github.io/tools/) | Project pages for the deterministic compiler, object, linker, validation, and runtime toolchain |
-| [Documentation](https://noemion.github.io/docs/) | Jekyll-generated guides and tool manuals maintained from Markdown sources |
-| [Website repository](https://github.com/Noemion/noemion.github.io) | The Jekyll layouts, Markdown sources, design system, navigation, tests, and Pages deployment workflow |
-
-> **Current stage:** specification and secure binary-core design. No stable ABI, production toolchain, or final specification has been released.
+> **Current stage:** accepted vocabulary and application topology; specification and secure core design are in progress. No stable wire format, ABI, production command, or release package exists yet.
 
 <p align="center"><sub>© 2026 Noemion. All rights reserved. Noemion and its associated marks are not licensed for reuse.</sub></p>
