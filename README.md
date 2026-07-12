@@ -26,9 +26,9 @@
 
 | Noesis | Noema |
 | :--- | :--- |
-| Understanding and compilation | GSIR / GOBJ machine representations |
+| Understanding and compilation | NIR / NOBJ machine representations |
 
-<p align="center"><code>human intent → deterministic compilation → GSIR / GOBJ → link · load · execute</code></p>
+<p align="center"><code>human intent → deterministic compilation → NIR / NOBJ → link · load · execute</code></p>
 
 ## The project
 
@@ -52,7 +52,7 @@ The canonical public entry point is **[noemion.github.io](https://noemion.github
 | :--- | :--- |
 | [Project portal](https://noemion.github.io/) | Noemion's purpose, boundaries, current stage, and recommended starting points |
 | [Architecture](https://noemion.github.io/architecture/) | Object lifecycle, responsibility layers, trust boundaries, and open questions |
-| [Specifications](https://noemion.github.io/specifications/) | GSIR, GOBJ, SSO, maturity labels, invariants, and normative boundaries |
+| [Specifications](https://noemion.github.io/specifications/) | NIR, NOBJ, HOBJ, maturity labels, invariants, and normative boundaries |
 | [Tools](https://noemion.github.io/tools/) | Project pages for the deterministic compiler, object, linker, validation, and runtime toolchain |
 | [Documentation](https://noemion.github.io/docs/) | Jekyll-generated guides and tool manuals maintained from Markdown sources |
 | [Website repository](https://github.com/Noemion/noemion.github.io) | The Jekyll layouts, Markdown sources, design system, navigation, tests, and Pages deployment workflow |
