@@ -4,7 +4,7 @@
   <p>A deterministic foundation for durable natural-language goals.</p>
   <p>
     <img alt="Stage: Specification and Core Design" src="https://img.shields.io/badge/stage-specification_%26_core_design-0969da?style=flat-square">
-    <img alt="Core: Deterministic" src="https://img.shields.io/badge/core-deterministic-1f883d?style=flat-square">
+    <img alt="Formation: Deterministic" src="https://img.shields.io/badge/formation-deterministic-1f883d?style=flat-square">
     <img alt="Models: Untrusted Inputs" src="https://img.shields.io/badge/models-untrusted_inputs-656d76?style=flat-square">
   </p>
   <p>
@@ -22,47 +22,47 @@
 
 ## A new primitive: Endem
 
-**Noemion** is the project and ecosystem name. Its core engineering term is **Endem** (`end` + `-eme`): the smallest independently valid and verifiable unit of a desired end state.
+**Noemion** is the project and field name. Its foundational artifact is **Endem** (`end` + `-eme`): the smallest independently valid and verifiable unit of a desired end state.
 
-An Endem is not a prompt wrapped in a binary container. It carries one root case graph together with five explicit projection groups:
+An Endem is not a prompt in a binary wrapper. It has one root situation graph and six typed semantic facets:
 
-| `say` | `mean` | `case` | `when` | `open` |
-| :--- | :--- | :--- | :--- | :--- |
-| Source signs and provenance | Authorized meaning projection | One possible target situation | Fulfillment observations and authority | Preserved projection gaps |
-
-The relation graph itself carries the logical form: the artifact does not self-certify through a `logical_form`, `valid`, or `true` label. Invalid sign combinations, unresolved projections, and insufficient observations remain distinct as `no-sense`, `open`, and `unknown`.
-
-<p align="center"><code>source → form → Endem → [optional bind → Weave] → run → Frame → Witness</code></p>
-
-## One compact application surface
-
-The project plans one public command, `endem`, instead of a family of prefixed tools:
-
-| Command | Responsibility |
+| Facet | Responsibility |
 | :--- | :--- |
-| `endem form` | Deterministically form an Endem from controlled source bindings |
-| `endem check` | Validate the actual artifact and return scoped verification evidence |
-| `endem bind` | Resolve references and build a closed Weave |
-| `endem pack` / `seal` | Prepare a release and bind an external signature response |
-| `endem see` | Inspect with a separately implemented, read-only parser |
-| `endem run` | Start an isolated runner with explicit capabilities and acceptance policy |
-| `endem test` | Run conformance, reproducibility, malformed-input, and cross-reader tests |
+| `rhem` | Source signs and replayable provenance |
+| `semion` | Authorized projection into symbols, referents, and relations |
+| `skena` | One neutral possible-situation graph |
+| `telis` | Direction toward making or keeping that situation actual |
+| `krin` | Structural comparison, evidence, and decision contract |
+| `apor` | Expressible projection gaps that no authority has resolved |
 
-A single user-facing command does not collapse trust domains. `see` must remain independent of the production reader, and `run` must execute in a separate least-privilege process. Models may propose candidates; they never write canonical Endem bytes, widen authority, or declare acceptance.
+The situation remains neutral: prohibition is explicit negation inside `skena`, not a second goal force. Runtime observations form a `phain` graph aligned with the same symbols and roles, so `krin` can compare what was sought with what was observed. No artifact self-certifies with `valid`, `true`, or a model score.
 
-## Artifact vocabulary
+## A compact native vocabulary
 
-- **Endem** — one minimal goal unit.
-- **Weave** — a resolved closure of two or more Endems and their pinned dependencies; one self-contained Endem needs no Weave.
-- **Frame** — the immutable loaded state for one run; it is not a file format.
-- **Witness** — scoped evidence and decisions from a run; it is evidence, not a claim of mathematical proof.
+| Name | Role |
+| :--- | :--- |
+| **Endem** | One minimal goal artifact |
+| **Synem** | A resolved closure of Endems and pinned dependencies |
+| **Dromen** | Immutable enactment state for one session; never a file |
+| **Tekmor** | Scoped evidence containing `phain`, provenance, strength, and limits |
+| **Poiet** | The sole deterministic production and writing domain |
+| **Theor** | A separately implemented, read-only interpretation domain |
+| **Praxor** | An isolated enactment and least-authority domain |
 
-The design borrows durable ideas from compiler and binary toolchains—deterministic writing, linking, relocation-like reference binding, independent inspection, loading, stripping, and integrity checks—without copying their machine-instruction ontology or their application count.
+The planned public command is `endem`, with eight native actions:
+
+<p align="center"><code>poie · elenk · pleko · tasse · sphra · theor · praxe · peira</code></p>
+
+<p align="center"><code>source signs → poie → Endem → pleko → Synem → praxe → Dromen → phain / Tekmor → Decision</code></p>
+
+A single command surface does not collapse trust boundaries. Theor cannot reuse production parsing or write artifacts. Praxor cannot own the Poiet writer. Models may propose candidates, plans, or capability parameters; they never write canonical Endem bytes, erase unresolved `apor`, widen authority, or declare acceptance.
 
 ## Project portal and status
 
-The canonical public entry point is **[noemion.github.io](https://noemion.github.io/)**. It keeps accepted decisions, proposed mechanisms, and verified implementation evidence visibly separate.
+The design borrows durable ideas from binary toolchains—deterministic writing, explicit composition, independent inspection, bounded loading, reproducibility, and integrity—without copying their machine-instruction ontology or established compiler vocabulary.
 
-> **Current stage:** accepted vocabulary, propositional projection semantics, and application topology; specification and secure core design are in progress. No stable wire format, ABI, production command, or release package exists yet.
+The canonical public entry point is **[noemion.github.io](https://noemion.github.io/)**.
+
+> **Current stage:** the native vocabulary, six-facet semantic model, situation/direction/observation separation, and trust boundaries are accepted design decisions. No stable wire format, ABI, executable command, or release package exists yet.
 
 <p align="center"><sub>© 2026 Noemion. All rights reserved. Noemion and its associated marks are not licensed for reuse.</sub></p>
