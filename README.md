@@ -63,6 +63,6 @@ The design borrows durable ideas from binary toolchains—deterministic writing,
 
 The canonical public entry point is **[noemion.github.io](https://noemion.github.io/)**.
 
-> **Current stage:** the native vocabulary, six-facet semantic model, and trust boundaries are accepted design decisions. An unpublished Rust candidate implements `poie`, `elenk`, `theor`, and `peira` against the experimental END-P1 profile; no public implementation repository, stable ABI, or release package exists yet.
+> **Current stage:** the native vocabulary, six-facet semantic model, and trust boundaries are accepted design decisions. The project has not entered component code development: Poiet, Theor, Praxor, and the `endem` CLI remain architectural responsibilities, with no implementation source, stable ABI, or release package.
 
 <p align="center"><sub>© 2026 Noemion. All rights reserved. Noemion and its associated marks are not licensed for reuse.</sub></p>
