@@ -1,68 +1,51 @@
 <div align="center">
   <h1>Noemion</h1>
-  <p><strong>Ends, made inspectable.</strong></p>
-  <p>A deterministic foundation for durable natural-language goals.</p>
+  <p><strong>Goals are too important to live only in a prompt.</strong></p>
+  <p>Researching a durable, inspectable foundation for natural-language goals.</p>
   <p>
-    <img alt="Stage: Specification and Core Design" src="https://img.shields.io/badge/stage-specification_%26_core_design-0969da?style=flat-square">
-    <img alt="Formation: Deterministic" src="https://img.shields.io/badge/formation-deterministic-1f883d?style=flat-square">
-    <img alt="Models: Untrusted Inputs" src="https://img.shields.io/badge/models-untrusted_inputs-656d76?style=flat-square">
+    <img alt="Stage: Research and specification" src="https://img.shields.io/badge/stage-research_%26_specification-0969da?style=flat-square">
   </p>
   <p>
-    <a href="https://noemion.github.io/">Project Portal</a>
+    <a href="https://noemion.github.io/">Project portal</a>
     ·
-    <a href="https://noemion.github.io/endem/">Endem</a>
+    <a href="https://noemion.github.io/docs/getting-started.html">Start here</a>
+    ·
+    <a href="https://noemion.github.io/architecture/">Architecture</a>
     ·
     <a href="https://noemion.github.io/specifications/">Specifications</a>
-    ·
-    <a href="https://github.com/Noemion/noemion.github.io">Website Source</a>
   </p>
 </div>
 
 ---
 
-## A new primitive: Endem
+## The problem
 
-**Noemion** is the project and field name. Its foundational artifact is **Endem** (`end` + `-eme`): the smallest independently valid and verifiable unit of a desired end state.
+AI systems can take powerful actions, yet their goals are often trapped in temporary conversations, scattered instructions, and model interpretations that are difficult to inspect later.
 
-An Endem is not a prompt in a binary wrapper. It has one root situation graph and six typed semantic facets:
+When the goal matters, “the model probably understood” is not a strong enough foundation.
 
-| Facet | Responsibility |
-| :--- | :--- |
-| `rhem` | Source signs and replayable provenance |
-| `semion` | Authorized projection into symbols, referents, and relations |
-| `skena` | One neutral possible-situation graph |
-| `telis` | Direction toward making or keeping that situation actual |
-| `krin` | Structural comparison, evidence, and decision contract |
-| `apor` | Expressible projection gaps that no authority has resolved |
+## The idea
 
-The situation remains neutral: prohibition is explicit negation inside `skena`, not a second goal force. Runtime observations form a `phain` graph aligned with the same symbols and roles, so `krin` can compare what was sought with what was observed. No artifact self-certifies with `valid`, `true`, or a model score.
+Noemion explores a different approach: keep natural language human-readable while making its meaning, unresolved gaps, desired outcome, and acceptance conditions explicit enough for software to inspect.
 
-## A compact native vocabulary
+At the center is **Endem**—a proposed artifact for one independently understandable and verifiable desired end state. Think of it as a goal that can carry its own context without pretending uncertainty has disappeared.
 
-| Name | Role |
-| :--- | :--- |
-| **Endem** | One minimal goal artifact |
-| **Synem** | A resolved closure of Endems and pinned dependencies |
-| **Dromen** | Immutable enactment state for one session; never a file |
-| **Tekmor** | Scoped evidence containing `phain`, provenance, strength, and limits |
-| **Poiet** | The sole deterministic production and writing domain |
-| **Theor** | A separately implemented, read-only interpretation domain |
-| **Praxor** | An isolated enactment and least-authority domain |
+The long-term direction is simple to state, even if it is hard to build:
 
-The command surface is `endem`, with eight native actions:
+- preserve what people actually said;
+- make interpretation and remaining ambiguity visible;
+- separate model suggestions from trusted decisions;
+- compare intended outcomes with scoped evidence;
+- keep formation, inspection, and execution in separate trust boundaries.
 
-<p align="center"><code>poie · elenk · pleko · tasse · sphra · theor · praxe · peira</code></p>
+Natural language remains the interface. Silent reinterpretation stops being the architecture.
 
-<p align="center"><code>source signs → poie → Endem → pleko → Synem → praxe → Dromen → phain / Tekmor → Decision</code></p>
+## Current status
 
-A single command surface does not collapse trust boundaries. Theor cannot reuse production parsing or write artifacts. Praxor cannot own the Poiet writer. Models may propose candidates, plans, or capability parameters; they never write canonical Endem bytes, erase unresolved `apor`, widen authority, or declare acceptance.
+Noemion is currently a research and specification project. The public work includes project definitions, architecture boundaries, design proposals, draft specifications, threat analysis, and validation plans.
 
-## Project portal and status
+There is no released Ktisor, Theor, Drasor, or `endem` implementation yet. No executable package, stable ABI, or production compatibility claim is available.
 
-The design borrows durable ideas from binary toolchains—deterministic writing, explicit composition, independent inspection, bounded loading, reproducibility, and integrity—without copying their machine-instruction ontology or established compiler vocabulary.
-
-The canonical public entry point is **[noemion.github.io](https://noemion.github.io/)**.
-
-> **Current stage:** the native vocabulary, six-facet semantic model, and trust boundaries are accepted design decisions. The project has not entered component code development: Poiet, Theor, Praxor, and the `endem` CLI remain architectural responsibilities, with no implementation source, stable ABI, or release package.
+The best place to explore the work is the **[Noemion project portal](https://noemion.github.io/)**.
 
 <p align="center"><sub>© 2026 Noemion. All rights reserved. Noemion and its associated marks are not licensed for reuse.</sub></p>
