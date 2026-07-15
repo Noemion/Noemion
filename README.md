@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Noemion</h1>
-  <p><strong>Goals are too important to live only in a prompt.</strong></p>
-  <p>Researching a durable, inspectable foundation for natural-language goals.</p>
+  <p><strong>For decades, software compiled code written by programmers for machines.<br>The AI era needs a way for everyone to compile human intent for intelligent systems.</strong></p>
+  <p>Noemion researches how ordinary people can compile natural-language goals into durable, inspectable artifacts.</p>
   <p>
     <img alt="Stage: Research and specification" src="https://img.shields.io/badge/stage-research_%26_specification-0969da?style=flat-square">
   </p>
@@ -18,19 +18,23 @@
 
 ---
 
-## The problem
+## A new software boundary
 
 AI systems can take powerful actions, yet their goals are often trapped in temporary conversations, scattered instructions, and model interpretations that are difficult to inspect later.
 
 When the goal matters, “the model probably understood” is not a strong enough foundation.
 
-## The idea
+Noemion's thesis is deliberately ambitious: the people setting a goal should be able to compile their own intent into something an AI system can use without silently redefining it.
 
-Noemion explores a different approach: keep natural language human-readable while making its meaning, unresolved gaps, desired outcome, and acceptance conditions explicit enough for software to inspect.
+This is not natural-language-to-code. It is **intent-to-artifact**.
+
+## What compilation means
+
+In Noemion, compilation means a reviewable path from ordinary language to a durable goal artifact. The process keeps the source human-readable while making its interpretation, unresolved gaps, desired outcome, and acceptance conditions explicit enough for software to inspect.
 
 At the center is **Endem**—a proposed artifact for one independently understandable and verifiable desired end state. Think of it as a goal that can carry its own context without pretending uncertainty has disappeared.
 
-The long-term direction is simple to state, even if it is hard to build:
+The direction is simple to state, even if it is hard to build:
 
 - preserve what people actually said;
 - make interpretation and remaining ambiguity visible;
@@ -38,7 +42,7 @@ The long-term direction is simple to state, even if it is hard to build:
 - compare intended outcomes with scoped evidence;
 - keep formation, inspection, and execution in separate trust boundaries.
 
-Natural language remains the interface. Silent reinterpretation stops being the architecture.
+Compilation may stop when meaning is missing. An AI system may use the result, but it does not silently become the authority over what the user meant.
 
 ## Current status
 
