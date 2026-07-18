@@ -48,7 +48,9 @@ Compilation may stop when meaning is missing. An AI system may use the result, b
 
 Noemion is currently a research and specification project. The public work includes project definitions, architecture boundaries, design proposals, draft specifications, threat analysis, and validation plans.
 
-There is no released Ktisor, Theor, Drasor, or `endem` implementation yet. No executable package, stable ABI, or production compatibility claim is available.
+There is no released deterministic producer, independent inspector, bounded runner, or `endem` implementation yet. No executable package, stable ABI, or production compatibility claim is available.
+
+Noemion and Endem are the only retained coined names. Their pronunciation candidates—`No-e-mi-on` and `En-dem`—give every written letter a sound, but first-read fluency, dictation, and oral distinction still require independent human validation.
 
 The best place to explore the work is the **[Noemion project portal](https://noemion.github.io/)**.
 
